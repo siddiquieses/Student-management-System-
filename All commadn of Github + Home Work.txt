@@ -1,0 +1,23 @@
+Thursday  
+git clone repo_link
+
+git branch your_branch_name
+
+
+Crud Key points
+$host="localhost";
+$username="root";
+$password="";
+$database="crud";
+mysqli  method is use for checking connection
+
+for passing connection of every file 
+use 
+require "connection.php"
+
+
+
+Home Work
+Create a Student Form put all feilds according to student Record
+1)Insert Data in mysql throgh php
+2)view Data in Tabulare Fromat 
