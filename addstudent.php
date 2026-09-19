@@ -5,9 +5,12 @@ if($_SERVER['REQUEST_METHOD']==='POST')
 {
    $name=$_POST['name'];
    $email=$_POST['email'];
-  
+  $contact=$_POST['phone'];
+   $cnic=$_POST['cnic'];
 
-   $query= "INSERT INTO student (`name`, `email`) VALUES ('$name','$email')";
+
+   $query= "INSERT INTO student (`name`, `email`, `phoneno`, `CNIC`) VALUES
+    ('$name','$email','$contact','$cnic')";
    $sql=mysqli_query($connection, $query);
 
   if($sql){
@@ -34,18 +37,23 @@ if($_SERVER['REQUEST_METHOD']==='POST')
 <form action="" method="post">
      <label for=""  class="form-label">Enter Name</label><br>
      <input type="text"  name="name" class="form-control" placeholder="Enter name"><br>
+
      <label class="form-label">Enter Email</label><br>
      <input type="text" class="form-control"  name="email" placeholder="Enter Email"/>
+
    <label class="form-label">Enter Phone No</label><br>
-     <input type="text" class="form-control"  name="email" placeholder="Enter phone numer"/>
+     <input type="text" class="form-control"  name="phone" placeholder="Enter phone numer"/>
+
         <label class="form-label">Enter cnic</label><br>
-     <input type="text" class="form-control"  name="email" placeholder="Enter cnic"/>
+     <input type="text" class="form-control"  name="cnic" placeholder="Enter cnic"/>
+
+<!-- 
              <label class="form-label">Enter Gender</label><br>
-             <select name="" id="">
-                    <option value="">select Gender</option>
-              <option value="">Male</option>
-              <option value="">Female</option>
-             </select>
+             <select  id="">
+                    <option value="" name="gender">select Gender</option>
+              <option value="" >Male</option>
+              <option value="" >Female</option>
+             </select> -->
      <button type="submit">Add student</button>
 </form>
 

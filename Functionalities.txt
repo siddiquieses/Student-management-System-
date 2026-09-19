@@ -1,0 +1,15 @@
+Add Student
+Functional Requirements
+1)42101-5361609-3 (hyphen included its not neccessary)
+2)phone number must be and 11 digit
+3)email @ is neccessary
+4)student name must be minimum 3 character maximum 20
+5)Add Gender of Student 
+6)Selet Date Of Birth
+7)Add Password must be strong  when password will store in
+backend the password should be converted in hash format
+
+
+====================================
+
+   
